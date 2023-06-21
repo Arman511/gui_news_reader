@@ -23,7 +23,7 @@ impl App for Headlines {
         _storage: Option<&dyn eframe::epi::Storage>,
     ) {
         let api_key = self.config.api_key.to_string();
-        let refresh_news_data = self.config.refresh_news_data;
+        let _refresh_news_data = self.config.refresh_news_data;
 
         let (mut news_tx, news_rx) = channel();
         let (app_tx, app_rx) = sync_channel(1);

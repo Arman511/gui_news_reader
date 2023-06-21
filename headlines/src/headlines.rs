@@ -1,11 +1,10 @@
 use eframe::egui::{
-    self, epaint::text, Button, Color32, CtxRef, FontDefinitions, FontFamily, Hyperlink, Key,
+    self, Button, Color32, CtxRef, FontDefinitions, FontFamily, Hyperlink, Key,
     Label, Layout, Separator, TextStyle, TopBottomPanel, Window,
 };
 use serde::{Deserialize, Serialize};
 use std::{
     borrow::Cow,
-    iter::FromIterator,
     sync::mpsc::{Receiver, SyncSender},
 };
 
